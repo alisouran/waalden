@@ -46,25 +46,16 @@ table {
 
 @font-face {
     font-family: 'Vazir';
+    src: url('assets/fonts/Vazir.woff2') format('woff2'), url('assets/fonts/Vazir.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
-    src: url('assets/fonts/Vazir.eot');
-    /* IE9 Compat Modes */
-    src: local('Vazir'), local('Vazir'), url('assets/fonts/Vazir.eot') format('embedded-opentype'), /* IE6-IE8 */
-    url('/assets/fonts/Vazir.woff2') format('woff2'), /* Super Modern Browsers */
-    url('/assets/fonts/Vazir.woff') format('woff'), /* Modern Browsers */
-    url('/assets/fonts/Vazir.ttf') format('truetype')/* Safari, Android, iOS */
 }
 
 @font-face {
     font-family: 'Vazir';
-    font-style: normal;
+    src: url('assets/fonts/Vazir-Bold.woff2') format('woff2'), url('assets/fonts/Vazir-Bold.woff') format('woff');
     font-weight: bold;
-    src: url('assets/fonts/Vazir-Bold.eot');
-    /* IE9 Compat Modes */
-    src: local('Vazir-Bold'), local('Vazir-Bold'), url('assets/fonts/Vazir-Bold.eot') format('embedded-opentype'), /* IE6-IE8 */
-    url('/assets/fonts/Vazir-Bold.woff2') format('woff2'), /* Super Modern Browsers */
-    url('/assets/fonts/Vazir-Bold.woff') format('woff'), /* Modern Browsers */
-    url('/assets/fonts/Vazir-Bold.ttf') format('truetype')/* Safari, Android, iOS */
+    font-style: normal;
 }
 
 body, html {
