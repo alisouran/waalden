@@ -1,0 +1,339 @@
+/* ======================
+    Reset Css Styles
+=======================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    text-decoration: none;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ======================
+    General Css Styles
+=======================*/
+
+@font-face {
+    font-family: 'Vazir';
+    font-style: normal;
+    src: url('assets/fonts/Vazir.eot');
+    /* IE9 Compat Modes */
+    src: local('Vazir'), local('Vazir'), url('assets/fonts/Vazir.eot') format('embedded-opentype'), /* IE6-IE8 */
+    url('/assets/fonts/Vazir.woff2') format('woff2'), /* Super Modern Browsers */
+    url('/assets/fonts/Vazir.woff') format('woff'), /* Modern Browsers */
+    url('/assets/fonts/Vazir.ttf') format('truetype')/* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Vazir';
+    font-style: normal;
+    font-weight: bold;
+    src: url('assets/fonts/Vazir-Bold.eot');
+    /* IE9 Compat Modes */
+    src: local('Vazir-Bold'), local('Vazir-Bold'), url('assets/fonts/Vazir-Bold.eot') format('embedded-opentype'), /* IE6-IE8 */
+    url('/assets/fonts/Vazir-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+    url('/assets/fonts/Vazir-Bold.woff') format('woff'), /* Modern Browsers */
+    url('/assets/fonts/Vazir-Bold.ttf') format('truetype')/* Safari, Android, iOS */
+}
+
+body, html {
+    direction: rtl !important;
+    font-family: Vazir !important;
+}
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address {
+    font-family: Vazir !important;
+}
+
+.mr-7 {
+    margin-right: 5rem !important;
+}
+
+.position-fixed {
+    position: fixed;
+}
+
+.bold {
+    font-weight: bold !important;
+}
+
+.color-primary {
+    color: rgb(108, 99, 255) !important;
+    transition: .8s;
+}
+
+.color-primary:hover {
+    color: rgb(97, 89, 229) !important;
+    transition: .8s;
+}
+
+.nav-font {
+    font-weight: bold;
+}
+
+.dir-ltr {
+    direction: ltr;
+}
+
+.icon-size {
+    font-size: 35px;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.nav-font-size {
+    font-size: 23px;
+}
+
+.margin-auto {
+    margin: 0 auto;
+}
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+.pd-5 {
+    padding: 5%
+}
+
+.color-light {
+    color: #EEEEEE;
+}
+
+.hero-img {
+    width: 90%;
+    animation: upDown 10s infinite;
+}
+
+.active-nav-link:after {
+    transition: all ease-in-out .2s;
+    background: none repeat scroll 0 0 #000;
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.active-nav-link-honarma:after {
+    transition: all ease-in-out .2s;
+    background: none repeat scroll 0 0 rgb(97, 89, 229);
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.nav-shadow-color {
+    box-shadow: 0px -5px 7px black;
+    background-color: white;
+}
+
+@keyframes upDown {
+    0% {
+        padding-top: 50px;
+        margin-right: 40px;
+    }
+    50% {
+        padding-top: 10px;
+        margin-right: -20px;
+    }
+    100% {
+        padding-top: 50px;
+        margin-right: 40px;
+    }
+}
+
+.hero-text {
+    margin-top: 33% !important;
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .hero-text {
+        margin-top: 30% !important;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .hero-text {
+        margin-top: 20% !important;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .hero-text {
+        margin-top: 5% !important;
+        margin-bottom: 5% !important;
+    }
+    .hero-img {
+        width: 100%;
+    }
+    @keyframes upDown {
+        0% {
+            padding-top: 30px;
+        }
+        50% {
+            padding-top: 10px;
+        }
+        100% {
+            padding-top: 30px;
+        }
+    }
+    .mr-7 {
+        margin-right: 0 !important;
+    }
+    .mobile-align-center {
+        text-align: center !important;
+    }
+}
+
+.twitter:hover, .twitter:focus {
+    color: #55acee !important;
+    transition: .8s;
+}
+
+.telegram:hover, .telegram:focus {
+    color: #0084ff !important;
+    transition: .8s;
+}
+
+.instagram:hover, .instagram:focus {
+    color: #e4405f !important;
+    transition: .8s;
+}
+
+.facebook:hover, .facebook:focus {
+    color: #3b5999 !important;
+    transition: .8s;
+}
+
+.facebook, .twitter, .telegram, .instagram {
+    color: rgba(0, 0, 0, .5);
+    transition: .8s;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo>img {
+    width: 48% !important;
+}
+
+.hover-border-honarma:after {
+    transition: all ease-in-out .2s;
+    background: none repeat scroll 0 0 rgb(97, 89, 229);
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    margin-top: 10px;
+}
+
+.hover-border-honarma:hover:after {
+    width: 100%;
+}
+
+.hover-border:after {
+    transition: all ease-in-out .2s;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, .7);
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    margin-top: 10px;
+}
+
+.hover-border:hover:after {
+    width: 100%;
+}
+
+.btn-outline-primary {
+    float: left;
+    color: #6c63ff;
+    border-color: #6c63ff;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #6c63ff;
+    border-color: #6c63ff;
+}
+
+.honarema-text {
+    color: #6c63ff
+}
+
+.container-card {
+    position: relative;
+}
+
+.image-card {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay-card {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.container-card:hover .overlay-card {
+    opacity: 1;
+}
+
+.text-card {
+    text-align: center;
+    top: 30%;
+    position: absolute;
+    right: 6%;
+    color: white;
+}
+
+.card-body>img {
+    height: 144.3px;
+}
