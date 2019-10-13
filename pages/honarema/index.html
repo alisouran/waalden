@@ -11,14 +11,21 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
+      <link rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.10.2/css/all.css'>
     <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/media-queries.css" />
     <script defer src="../../assets/js/all.js"></script>
   </head>
+
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light nav-shadow-color pb-0">
-      <a class="navbar-brand pl-3 logo" href="#"
-        ><img class="img-fluid" src="../../assets/img/logo.png" alt="logo"
-      /></a>
+    <!--Desktop NavBar-->
+    <nav
+      class="navbar navbar-expand-lg navbar-light nav-shadow-color pb-0 sticky-top tablet-none"
+    >
+      <a class="navbar-brand pl-3 logo" href="#">
+        <img class="img-fluid" src="../../assets/img/logo.png" alt="logo" />
+      </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -33,9 +40,10 @@
       <div class="collapse navbar-collapse margin-auto" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item hover-border text-right pt-2 nav-font">
-            <a class="nav-link nav-font-size pr-3 pl-3" href="/"
-              >خانه <span class="sr-only"></span
-            ></a>
+            <a class="nav-link nav-font-size pr-3 pl-3" href="/">
+              خانه
+              <span class="sr-only"></span>
+            </a>
           </li>
           <li
             class="nav-item active active-nav-link-honarma text-right pt-2 nav-font"
@@ -43,8 +51,9 @@
             <a
               class="nav-link nav-font-size pr-3 pl-3 color-primary"
               href="/pages/honarema/"
-              >هنرِ ما</a
             >
+              هنرِ ما
+            </a>
           </li>
           <li class="nav-item hover-border text-right pt-2 nav-font">
             <a class="nav-link nav-font-size pr-3 pl-3" href="#">داستان ما</a>
@@ -59,118 +68,804 @@
           <li class="nav-item">
             <a class="nav-link icon-size pt-2 pb-2 telegram" href="#">
               <i class="fab fa-telegram"></i>
-              <span class="sr-only"></span
-            ></a>
+              <span class="sr-only"></span>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link icon-size pt-2 pb-2 instagram" href="#"
-              ><i class="fab fa-instagram"></i
-            ></a>
+            <a class="nav-link icon-size pt-2 pb-2 instagram" href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link icon-size pt-2 pb-2 facebook" href="#"
-              ><i class="fab fa-facebook"></i
-            ></a>
+            <a class="nav-link icon-size pt-2 pb-2 facebook" href="#">
+              <i class="fab fa-facebook"></i>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link icon-size pt-2 pb-2 twitter" href="#"
-              ><i class="fab fa-twitter"></i
-            ></a>
+            <a class="nav-link icon-size pt-2 pb-2 twitter" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
           </li>
         </ul>
       </div>
     </nav>
-    <div class="container-fluid">
-      <h2 class="h1 bold text-center mt-5 honarema-text">هنرِ ما</h2>
-      <div class="container">
-        <div class="row justify-content-center mt-5 mb-5">
-          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-            <div class="card">
-              <div class="card-body container-card">
-                <img
-                  src="../../assets/img/rahema-01.svg"
-                  class="image-card"
-                  alt="..."
-                />
-                <div class="overlay-card">
-                  <div class="text-card">
-                    <h3 class="h3">برنا‌مه‌نویسی اندروید</h3>
-                    <p>طراحی و برنامه‌نویسی اپلیکیشن</p>
+
+    <!-- Tablet And Mobile NavBar -->
+    <div class=" fixed-bottom" dir="ltr">
+      <nav class="tab" data-selected="2">
+        <div class="icons">
+          <div data-index="1" class="icon"><i class=" fas fa-home"></i></div>
+          <div data-index="2" class="icon"><i class="  fas fa-plus"></i></div>
+          <div data-index="3" class="icon "><i class=" fas fa-user fa-swap-opacity"></i></div>
+        </div>
+        <div class="bar">
+          <div class="cap"></div>
+          <div class="middle">
+            <div class="side"></div>
+            <div class="circle"></div>
+            <div class="side"></div>
+          </div>
+          <div class="cap"></div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <!-- Desktop Mode-->
+        <div class="col-lg-9 col-xl-9 tablet-none m-atuo mt-5" id="services">
+          <div class="row justify-content-center mt-5 mb-5">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div class="card">
+                <div class="card-body text-right">
+                  <div class="row pb-3">
+                    <div class="col-4"></div>
+                    <div class="col-8">
+                      <img
+                        src="../../assets/img/event-handler.svg"
+                        class="img-fluid text-left card-img"
+                        alt=""
+                      />
+                    </div>
                   </div>
+                  <h5 class="card-title h5 bold">مدیریت رویداد</h5>
+                  <h6 class="card-subtitle mb-2 text-muted mt-2">
+                    برنامه‌ریزی و اجرا
+                  </h6>
+                  <p class="card-text pb-2">
+                    مدیریت رویداد‌های شما و این حرفا.....
+                  </p>
+                  <a href="#" class="card-link ml-5">درخواست</a>
+                  <a href="#" class="card-link">مشاوره</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div class="card">
+                <div class="card-body text-right">
+                  <div class="row pb-3">
+                    <div class="col-4"></div>
+                    <div class="col-8">
+                      <img
+                        src="../../assets/img/programming.svg"
+                        class="img-fluid text-left card-img"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h5 class="card-title h5 bold">برنامه‌نویسی نرم‌افزار</h5>
+                  <h6 class="card-subtitle mb-2 text-muted mt-2">
+                    تحت‌وب و دسکتاپ
+                  </h6>
+                  <p class="card-text pb-2">
+                    برنامه نویسی نرم افزارهاتون و این کصشرا.....
+                  </p>
+                  <a href="#" class="card-link ml-5">درخواست</a>
+                  <a href="#" class="card-link">مشاوره</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div class="card">
+                <div class="card-body text-right">
+                  <div class="row pb-3">
+                    <div class="col-4"></div>
+                    <div class="col-8">
+                      <img
+                        src="../../assets/img/security.svg"
+                        class="img-fluid text-left card-img"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h5 class="card-title h5 bold">امنیت</h5>
+                  <h6 class="card-subtitle mb-2 text-muted mt-2">
+                    امن کردن کسب و کار
+                  </h6>
+                  <p class="card-text pb-2">
+                    امنیت کسب و کار اینترنتی و دادن‌های شما.....
+                  </p>
+                  <a href="#" class="card-link ml-5">درخواست</a>
+                  <a href="#" class="card-link">مشاوره</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div class="card">
+                <div class="card-body text-right">
+                  <div class="row pb-3">
+                    <div class="col-4"></div>
+                    <div class="col-8">
+                      <img
+                        src="../../assets/img/web-design.svg"
+                        class="img-fluid text-left card-img"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h5 class="card-title h5 bold">توسعه‌ی وب</h5>
+                  <h6 class="card-subtitle mb-2 text-muted mt-2">
+                    برنامه‌نویسی تحت وب
+                  </h6>
+                  <p class="card-text pb-2">
+                    توسعه‌ی فرانت‌اند و بک‌اند وبسایت شما.....
+                  </p>
+                  <a href="#" class="card-link ml-5">درخواست</a>
+                  <a href="#" class="card-link">مشاوره</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-            <div class="card">
-              <div class="card-body container-card">
-                <img
-                  src="../../assets/img/event-handler.svg"
-                  class="image-card"
-                  alt="..."
-                />
-                <div class="overlay-card">
-                  <div class="text-card">
-                    <h3 class="h3">برگزاری رویداد</h3>
-                    <p>مدیریت و برنامه‌ریزی برگزاری رویداد</p>
+          <div class="row justify-content-center mt-5 mb-5">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div class="card">
+                <div class="card-body text-right">
+                  <div class="row pb-3">
+                    <div class="col-4"></div>
+                    <div class="col-8">
+                      <img
+                        src="../../assets/img/app.svg"
+                        class="img-fluid text-left card-img"
+                        alt=""
+                      />
+                    </div>
                   </div>
+                  <h5 class="card-title h5 bold">توسعه‌ی اپلیکیشن</h5>
+                  <h6 class="card-subtitle mb-2 text-muted mt-2">
+                    توسعه‌ی اپلیکیشن موبایل
+                  </h6>
+                  <p class="card-text pb-2">.....</p>
+                  <a href="#" class="card-link ml-5">درخواست</a>
+                  <a href="#" class="card-link">مشاوره</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div class="card">
+                <div class="card-body text-right">
+                  <div class="row pb-3">
+                    <div class="col-4"></div>
+                    <div class="col-8">
+                      <img
+                        src="../../assets/img/data.svg"
+                        class="img-fluid text-left card-img"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h5 class="card-title h5 bold">تحلیل داده</h5>
+                  <h6 class="card-subtitle mb-2 text-muted mt-2">تحلیل داده</h6>
+                  <p class="card-text pb-2">
+                    مدیریت رویداد‌های شما و این حرفا.....
+                  </p>
+                  <a href="#" class="card-link ml-5">درخواست</a>
+                  <a href="#" class="card-link">مشاوره</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div class="card">
+                <div class="card-body text-right">
+                  <div class="row pb-3">
+                    <div class="col-4"></div>
+                    <div class="col-8">
+                      <img
+                        src="../../assets/img/branding.svg"
+                        class="img-fluid text-left card-img"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h5 class="card-title h5 bold">برندینگ</h5>
+                  <h6 class="card-subtitle mb-2 text-muted mt-2">
+                    برنامه‌ریزی و اجرا
+                  </h6>
+                  <p class="card-text pb-2">مدیریت برند شما و این حرفا.....</p>
+                  <a href="#" class="card-link ml-5">درخواست</a>
+                  <a href="#" class="card-link">مشاوره</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-            <div class="card">
-              <div class="card-body container-card">
-                <img
-                  src="../../assets/img/security.svg"
-                  class="image-card"
-                  alt="..."
-                />
-                <div class="overlay-card">
-                  <div class="text-card">
-                    <h3 class="h3">تامین امنیت</h3>
-                    <p>تامین امنیت کسب و کار آنلاین شما</p>
+        </div>
+        <div class="col-lg-9 col-xl-9 tablet-none m-atuo mt-5" id="company">
+          <div class="row justify-content-center mt-5 mb-5">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div class="card">
+                <div class="card-body text-right">
+                  <div class="row pb-3">
+                    <div class="col-4"></div>
+                    <div class="col-8">
+                      <img
+                        src="../../assets/img/event-handler.svg"
+                        class="img-fluid text-left card-img"
+                        alt=""
+                      />
+                    </div>
                   </div>
+                  <h5 class="card-title h5 bold">خدمات</h5>
+                  <h6 class="card-subtitle mb-2 text-muted mt-2">
+                    برنامه‌ریزی و اجرا
+                  </h6>
+                  <p class="card-text pb-2">
+                    مدیریت رویداد‌های شما و این حرفا.....
+                  </p>
+                  <a href="#" class="card-link ml-5">درخواست</a>
+                  <a href="#" class="card-link">مشاوره</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div class="card">
+                <div class="card-body text-right">
+                  <div class="row pb-3">
+                    <div class="col-4"></div>
+                    <div class="col-8">
+                      <img
+                        src="../../assets/img/programming.svg"
+                        class="img-fluid text-left card-img"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h5 class="card-title h5 bold">برنامه‌نویسی نرم‌افزار</h5>
+                  <h6 class="card-subtitle mb-2 text-muted mt-2">
+                    تحت‌وب و دسکتاپ
+                  </h6>
+                  <p class="card-text pb-2">
+                    برنامه نویسی نرم افزارهاتون و این کصشرا.....
+                  </p>
+                  <a href="#" class="card-link ml-5">درخواست</a>
+                  <a href="#" class="card-link">مشاوره</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div class="card">
+                <div class="card-body text-right">
+                  <div class="row pb-3">
+                    <div class="col-4"></div>
+                    <div class="col-8">
+                      <img
+                        src="../../assets/img/security.svg"
+                        class="img-fluid text-left card-img"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h5 class="card-title h5 bold">امنیت</h5>
+                  <h6 class="card-subtitle mb-2 text-muted mt-2">
+                    امن کردن کسب و کار
+                  </h6>
+                  <p class="card-text pb-2">
+                    امنیت کسب و کار اینترنتی و دادن‌های شما.....
+                  </p>
+                  <a href="#" class="card-link ml-5">درخواست</a>
+                  <a href="#" class="card-link">مشاوره</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div class="card">
+                <div class="card-body text-right">
+                  <div class="row pb-3">
+                    <div class="col-4"></div>
+                    <div class="col-8">
+                      <img
+                        src="../../assets/img/web-design.svg"
+                        class="img-fluid text-left card-img"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h5 class="card-title h5 bold">توسعه‌ی وب</h5>
+                  <h6 class="card-subtitle mb-2 text-muted mt-2">
+                    برنامه‌نویسی تحت وب
+                  </h6>
+                  <p class="card-text pb-2">
+                    توسعه‌ی فرانت‌اند و بک‌اند وبسایت شما.....
+                  </p>
+                  <a href="#" class="card-link ml-5">درخواست</a>
+                  <a href="#" class="card-link">مشاوره</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-            <div class="card">
-              <div class="card-body container-card">
-                <img
-                  src="../../assets/img/programming.svg"
-                  class="image-card"
-                  alt="..."
-                />
-                <div class="overlay-card">
-                  <div class="text-card">
-                    <h3 class="h3">طراحی نرم‌افزار</h3>
-                    <p>طراحی و برنامه‌نویسی نرم‌افزارهای مدیریتی</p>
+          <div class="row justify-content-center mt-5 mb-5">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div class="card">
+                <div class="card-body text-right">
+                  <div class="row pb-3">
+                    <div class="col-4"></div>
+                    <div class="col-8">
+                      <img
+                        src="../../assets/img/rahema-01.svg"
+                        class="img-fluid text-left card-img"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h5 class="card-title h5 bold">توسعه‌ی اپلیکیشن</h5>
+                  <h6 class="card-subtitle mb-2 text-muted mt-2">
+                    توسعه‌ی اپلیکیشن موبایل
+                  </h6>
+                  <p class="card-text pb-2">
+                    شایان کون گلابی، میسازه کص‌شر نابی.....
+                  </p>
+                  <a href="#" class="card-link ml-5">درخواست</a>
+                  <a href="#" class="card-link">مشاوره</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div class="card">
+                <div class="card-body text-right">
+                  <div class="row pb-3">
+                    <div class="col-4"></div>
+                    <div class="col-8">
+                      <img
+                        src="../../assets/img/data.svg"
+                        class="img-fluid text-left card-img"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h5 class="card-title h5 bold">تحلیل داده</h5>
+                  <h6 class="card-subtitle mb-2 text-muted mt-2">تحلیل داده</h6>
+                  <p class="card-text pb-2">
+                    مدیریت رویداد‌های شما و این حرفا.....
+                  </p>
+                  <a href="#" class="card-link ml-5">درخواست</a>
+                  <a href="#" class="card-link">مشاوره</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div class="card">
+                <div class="card-body text-right">
+                  <div class="row pb-3">
+                    <div class="col-4"></div>
+                    <div class="col-8">
+                      <img
+                        src="../../assets/img/event-handler.svg"
+                        class="img-fluid text-left card-img"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h5 class="card-title h5 bold">و بعدی</h5>
+                  <h6 class="card-subtitle mb-2 text-muted mt-2">
+                    برنامه‌ریزی و اجرا
+                  </h6>
+                  <p class="card-text pb-2">
+                    مدیریت رویداد‌های شما و این حرفا.....
+                  </p>
+                  <a href="#" class="card-link ml-5">درخواست</a>
+                  <a href="#" class="card-link">مشاوره</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div class="card">
+                <div class="card-body text-right">
+                  <div class="row pb-3">
+                    <div class="col-4"></div>
+                    <div class="col-8">
+                      <img
+                        src="../../assets/img/event-handler.svg"
+                        class="img-fluid text-left card-img"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h5 class="card-title h5 bold">و آخری</h5>
+                  <h6 class="card-subtitle mb-2 text-muted mt-2">
+                    برنامه‌ریزی و اجرا
+                  </h6>
+                  <p class="card-text pb-2">
+                    مدیریت رویداد‌های شما و این حرفا.....
+                  </p>
+                  <a href="#" class="card-link ml-5">درخواست</a>
+                  <a href="#" class="card-link">مشاوره</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-9 col-xl-9 tablet-none m-atuo mt-5" id="project">
+          <div class="row justify-content-center mt-5 mb-5">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div class="card">
+                <div class="card-body text-right">
+                  <div class="row pb-3">
+                    <div class="col-4"></div>
+                    <div class="col-8">
+                      <img
+                        src="../../assets/img/event-handler.svg"
+                        class="img-fluid text-left card-img"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h5 class="card-title h5 bold">مدیریت رویداد</h5>
+                  <h6 class="card-subtitle mb-2 text-muted mt-2">
+                    برنامه‌ریزی و اجرا
+                  </h6>
+                  <p class="card-text pb-2">
+                    مدیریت رویداد‌های شما و این حرفا.....
+                  </p>
+                  <a href="#" class="card-link ml-5">درخواست</a>
+                  <a href="#" class="card-link">مشاوره</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div class="card">
+                <div class="card-body text-right">
+                  <div class="row pb-3">
+                    <div class="col-4"></div>
+                    <div class="col-8">
+                      <img
+                        src="../../assets/img/programming.svg"
+                        class="img-fluid text-left card-img"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h5 class="card-title h5 bold">برنامه‌نویسی نرم‌افزار</h5>
+                  <h6 class="card-subtitle mb-2 text-muted mt-2">
+                    تحت‌وب و دسکتاپ
+                  </h6>
+                  <p class="card-text pb-2">
+                    برنامه نویسی نرم افزارهاتون و این کصشرا.....
+                  </p>
+                  <a href="#" class="card-link ml-5">درخواست</a>
+                  <a href="#" class="card-link">مشاوره</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div class="card">
+                <div class="card-body text-right">
+                  <div class="row pb-3">
+                    <div class="col-4"></div>
+                    <div class="col-8">
+                      <img
+                        src="../../assets/img/security.svg"
+                        class="img-fluid text-left card-img"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h5 class="card-title h5 bold">امنیت</h5>
+                  <h6 class="card-subtitle mb-2 text-muted mt-2">
+                    امن کردن کسب و کار
+                  </h6>
+                  <p class="card-text pb-2">
+                    امنیت کسب و کار اینترنتی و دادن‌های شما.....
+                  </p>
+                  <a href="#" class="card-link ml-5">درخواست</a>
+                  <a href="#" class="card-link">مشاوره</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div class="card">
+                <div class="card-body text-right">
+                  <div class="row pb-3">
+                    <div class="col-4"></div>
+                    <div class="col-8">
+                      <img
+                        src="../../assets/img/web-design.svg"
+                        class="img-fluid text-left card-img"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h5 class="card-title h5 bold">توسعه‌ی وب</h5>
+                  <h6 class="card-subtitle mb-2 text-muted mt-2">
+                    برنامه‌نویسی تحت وب
+                  </h6>
+                  <p class="card-text pb-2">
+                    توسعه‌ی فرانت‌اند و بک‌اند وبسایت شما.....
+                  </p>
+                  <a href="#" class="card-link ml-5">درخواست</a>
+                  <a href="#" class="card-link">مشاوره</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center mt-5 mb-5">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div class="card">
+                <div class="card-body text-right">
+                  <div class="row pb-3">
+                    <div class="col-4"></div>
+                    <div class="col-8">
+                      <img
+                        src="../../assets/img/rahema-01.svg"
+                        class="img-fluid text-left card-img"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h5 class="card-title h5 bold">توسعه‌ی اپلیکیشن</h5>
+                  <h6 class="card-subtitle mb-2 text-muted mt-2">
+                    توسعه‌ی اپلیکیشن موبایل
+                  </h6>
+                  <p class="card-text pb-2">
+                    شایان کون گلابی، میسازه کص‌شر نابی.....
+                  </p>
+                  <a href="#" class="card-link ml-5">درخواست</a>
+                  <a href="#" class="card-link">مشاوره</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div class="card">
+                <div class="card-body text-right">
+                  <div class="row pb-3">
+                    <div class="col-4"></div>
+                    <div class="col-8">
+                      <img
+                        src="../../assets/img/event-handler.svg"
+                        class="img-fluid text-left card-img"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h5 class="card-title h5 bold">گوه خوری بعدی</h5>
+                  <h6 class="card-subtitle mb-2 text-muted mt-2">
+                    برنامه‌ریزی و اجرا
+                  </h6>
+                  <p class="card-text pb-2">
+                    مدیریت رویداد‌های شما و این حرفا.....
+                  </p>
+                  <a href="#" class="card-link ml-5">درخواست</a>
+                  <a href="#" class="card-link">مشاوره</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div class="card">
+                <div class="card-body text-right">
+                  <div class="row pb-3">
+                    <div class="col-4"></div>
+                    <div class="col-8">
+                      <img
+                        src="../../assets/img/event-handler.svg"
+                        class="img-fluid text-left card-img"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h5 class="card-title h5 bold">و بعدی</h5>
+                  <h6 class="card-subtitle mb-2 text-muted mt-2">
+                    برنامه‌ریزی و اجرا
+                  </h6>
+                  <p class="card-text pb-2">
+                    مدیریت رویداد‌های شما و این حرفا.....
+                  </p>
+                  <a href="#" class="card-link ml-5">درخواست</a>
+                  <a href="#" class="card-link">مشاوره</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div class="card">
+                <div class="card-body text-right">
+                  <div class="row pb-3">
+                    <div class="col-4"></div>
+                    <div class="col-8">
+                      <img
+                        src="../../assets/img/event-handler.svg"
+                        class="img-fluid text-left card-img"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h5 class="card-title h5 bold">و آخری</h5>
+                  <h6 class="card-subtitle mb-2 text-muted mt-2">
+                    برنامه‌ریزی و اجرا
+                  </h6>
+                  <p class="card-text pb-2">
+                    مدیریت رویداد‌های شما و این حرفا.....
+                  </p>
+                  <a href="#" class="card-link ml-5">درخواست</a>
+                  <a href="#" class="card-link">مشاوره</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tablet-none col-lg-3 col-xl-3 ">
+          <div class="row  mt-5 mb-5 position-fixed tablet-none">
+            <div class="col-12">
+              <img
+                src="../../assets/img/path88.png"
+                class="img-fluid mx-auto d-block"
+                alt=""
+              />
+              <div
+                class="accordion menu-honar text-right"
+                id="accordionExample"
+              >
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link dark-color"
+                        onclick="displayHide('services', 'company', 'project')"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        <i class="fas fa-laptop-code"></i>
+                        خدمات ما
+                      </button>
+                    </h2>
+                  </div>
+
+                  <div
+                    id="collapseOne"
+                    class="collapse show"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="card-body text-justify">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                      و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه
+                      روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
+                      شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف
+                      بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه
+                      درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می
+                      طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
+                      ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی
+                      ایجاد کرد.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button
+                        onclick="displayHide('company', 'services', 'project')"
+                        class="btn btn-link collapsed dark-color"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        همکاری‌های ما
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseTwo"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="card-body text-justify">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                      و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه
+                      روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
+                      شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف
+                      بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه
+                      درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می
+                      طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
+                      ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی
+                      ایجاد کرد.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button
+                        onclick="displayHide('project', 'company', 'services')"
+                        class="btn btn-link collapsed dark-color"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        پروژه‌های ما
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseThree"
+                    class="collapse"
+                    aria-labelledby="headingThree"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="card-body text-justify">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                      و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه
+                      روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
+                      شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف
+                      بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه
+                      درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می
+                      طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
+                      ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی
+                      ایجاد کرد.
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="row justify-content-center mt-5 mb-5">
-          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-            <div class="card">
-              <div class="card-body container-card">
-                <img
-                  src="../../assets/img/web-design.svg"
-                  class="image-card"
-                  alt="..."
-                />
-                <div class="overlay-card">
-                  <div class="text-card">
-                    <h3 class="h3">طراحی سایت</h3>
-                    <p>طراحی و برنامه‌نویسی سایت برای شرکت‌ها و سازمان‌ها</p>
+        <!--Tablet And Mobile Mode-->
+        <div class="col-12 col-sm-12  desktop-none m-atuo">
+          <div class="row mt-3 mb-4">
+            <div class="col-6 col-sm-6">
+              <a href="#">
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="../../assets/img/services.svg"
+                      class="img-fluid"
+                      alt="services"
+                    />
+                    <h2 class="text-center mt-2">خدمات ما</h2>
                   </div>
                 </div>
-              </div>
+              </a>
+            </div>
+            <div class="col-6 col-sm-6">
+              <a href="#">
+                <div class="card">
+                  <div class="card-body">
+                    text
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-6">
+              <a href="#">
+                <div class="card">
+                  <div class="card-body">
+                    text
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-sm-6">
+              <a href="#">
+                <div class="card">
+                  <div class="card-body">
+                    text
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -192,5 +887,13 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function displayHide(id1, id2, id3) {
+        $("#" + id2).hide();
+        $("#" + id3).hide();
+        $("#" + id1).show();
+      }
+    </script>
+    <script src="../../assets/js/main.js"></script>
   </body>
 </html>
