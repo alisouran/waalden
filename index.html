@@ -25,7 +25,10 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light nav-shadow-color pb-0">
+    <!-- Desktop NavBar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light nav-shadow-color pb-0 tablet-none"
+    >
       <a class="navbar-brand pl-3 logo" href="#"
         ><img class="img-fluid" src="assets/img/logo.png" alt="logo"
       /></a>
@@ -88,32 +91,39 @@
         </ul>
       </div>
     </nav>
-    <div class="container-fluid position-fixed">
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-right">
-          <div class="hero-text mr-7 mobile-align-center">
-            <h2 class="h1 bold">توضیحات</h2>
-            <p class="">
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-              استفاده از طراحان گرافیک است.
-            </p>
-            <button
-              type="button"
-              class="btn btn-outline-primary mt-5 ml-5"
-              onclick="window.location.href='pages/honarema'"
-            >
-              بریم به هنر ما
-            </button>
+
+    <!--Mobile NavBar-->
+    <div class=" fixed-bottom desktop-none" dir="ltr">
+      <nav class="tab" data-selected="2">
+        <div class="icons">
+          <div data-index="1" class="icon" id="mobile-waalden">
+            <i class="fab fa-google-wallet"></i>
+          </div>
+          <div data-index="2" class="icon" id="mobile-home">
+            <i class="  fas fa-home"></i>
+          </div>
+          <div data-index="3" class="icon " id="mobile-dashboard">
+            <i class=" fas fa-user fa-swap-opacity"></i>
           </div>
         </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-right">
-          <img class="img-fluid hero-img" src="assets/img/hero.svg" alt="" />
+        <div class="bar">
+          <div class="cap"></div>
+          <div class="middle">
+            <div class="side"></div>
+            <div class="circle"></div>
+            <div class="side"></div>
+          </div>
+          <div class="cap"></div>
         </div>
-      </div>
+      </nav>
+    </div>
+
+    <div class="container-fluid position-fixed">
+      <div class="row" id="homepage-main"></div>
     </div>
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
       crossorigin="anonymous"
     ></script>
     <script
@@ -127,5 +137,6 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="/assets/js/all.js"></script>
+    <script defer src="/assets/js/main.js"></script>
   </body>
 </html>
