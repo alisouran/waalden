@@ -1,4 +1,11 @@
 $(document).ready(function() {
+  $(document).ajaxStart(function() {
+    $("#wait").fadeIn(100);
+  });
+  $(document).ajaxComplete(function() {
+    $("#wait").fadeOut(500);
+  });
+
   checkPosition();
   function checkPosition() {
     if (window.matchMedia("(max-width: 1080px)").matches) {
@@ -12,6 +19,9 @@ $(document).ready(function() {
       });
       $("#mobile-waalden").click(function() {
         $("#homepage-main").load("../../pages/layout/honarema-mobile.html");
+      });
+      $("#servicesMobileBtn").click(function() {
+        $("#homepage-main").load("../../pages/layout/servicesMobile.html");
       });
     } else {
       $("#homepage-main").load("../../pages/layout/homepage-desktop.html");

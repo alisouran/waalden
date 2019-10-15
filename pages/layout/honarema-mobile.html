@@ -1,1 +1,67 @@
-<h1>Honare Ma</h1>
+<div class="container">
+  <div class="row mt-3">
+    <div class="col-6">
+      <div id="servicesMobileBtn" class="card cpointer">
+        <div class="card-body text-center services-card">
+          <img src="../../assets/img/services.svg" class="img-fluid" alt="" />
+          <h5 class="h5 bold mt-3">خدمات ما</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div id="companyMobileBtn" class="card cpointer">
+        <div class="card-body text-center company-card">
+          <img src="../../assets/img/services.svg" class="img-fluid" alt="" />
+          <h5 class="h5 bold mt-3">همکاری‌های ما</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-6">
+      <div id="projectMobileBtn" class="card cpointer">
+        <div class="card-body text-center project-card">
+          <img src="../../assets/img/services.svg" class="img-fluid" alt="" />
+          <h5 class="h5 bold mt-3">پروژه‌های ما</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div id="storyMobileBtn" class="card cpointer">
+        <div class="card-body text-center story-card">
+          <img src="../../assets/img/services.svg" class="img-fluid" alt="" />
+          <h5 class="h5 bold mt-3">داستان ما</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-12">
+      <div id="contactusMobileBtn" class="card cpointer">
+        <div class="card-body text-center contactus-card">
+          <h3 class="h3 bold">تماس با ما</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $("#servicesMobileBtn").click(function() {
+    $("#homepage-main").load("../../pages/layout/honarema/servicesMobile.html");
+  });
+  $("#companyMobileBtn").click(function() {
+    $("#homepage-main").load("../../pages/layout/honarema/companyMobile.html");
+  });
+  $("#projectMobileBtn").click(function() {
+    $("#homepage-main").load("../../pages/layout/honarema/projectMobile.html");
+  });
+  $("#storyMobileBtn").click(function() {
+    $("#homepage-main").load("../../pages/layout/honarema/ourStoryMobile.html");
+  });
+  $("#contactusMobileBtn").click(function() {
+    $("#homepage-main").load(
+      "../../pages/layout/honarema/contactUsMobile.html"
+    );
+  });
+</script>

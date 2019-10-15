@@ -56,7 +56,7 @@
      r="130"
      fill="#536dfe"
      id="circle4"
-     style="opacity:0.99999999;fill:#ffeb3b;fill-opacity:1" />
+     style="opacity:0.99999999;fill:#f1c40f;fill-opacity:1" />
   <path
      d="M541.96094,482.10352c-72.23389,0-131-58.76661-131-131.00049s58.76611-131,131-131c72.2334,0,131,58.76611,131,131S614.19434,482.10352,541.96094,482.10352Zm0-260.00049a129.00025,129.00025,0,1,0,129,129A129.14608,129.14608,0,0,0,541.96094,222.103Z"
      transform="translate(-127.96097 -100.9571)"
@@ -112,7 +112,7 @@
      transform="translate(-127.96097 -100.9571)"
      fill="#536dfe"
      id="path26"
-     style="fill:#ffeb3b;fill-opacity:1" />
+     style="fill:#f1c40f;fill-opacity:1" />
   <circle
      cx="468.39689"
      cy="196.77542"
@@ -175,7 +175,7 @@
      ry="2"
      fill="#536dfe"
      id="ellipse50"
-     style="fill:#ffeb3b;fill-opacity:1" />
+     style="fill:#f1c40f;fill-opacity:1" />
   <ellipse
      cx="360.00006"
      cy="685.00009"
@@ -183,7 +183,7 @@
      ry="2"
      fill="#536dfe"
      id="ellipse52"
-     style="fill:#ffeb3b;fill-opacity:1" />
+     style="fill:#f1c40f;fill-opacity:1" />
   <ellipse
      cx="325.00006"
      cy="673.00009"
@@ -191,7 +191,7 @@
      ry="1.08571"
      fill="#536dfe"
      id="ellipse54"
-     style="fill:#ffeb3b;fill-opacity:1" />
+     style="fill:#f1c40f;fill-opacity:1" />
   <ellipse
      cx="393.00006"
      cy="697.00009"
@@ -199,5 +199,5 @@
      ry="1.08571"
      fill="#536dfe"
      id="ellipse56"
-     style="fill:#ffeb3b;fill-opacity:1" />
+     style="fill:#f1c40f;fill-opacity:1" />
 </svg>
