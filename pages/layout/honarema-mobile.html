@@ -1,7 +1,7 @@
 <nav class="width100">
   <div class="nav nav-tabs" id="nav-tab" role="tablist">
     <a
-      class="nav-item nav-link active text-center bold h6 width50"
+      class="nav-item nav-link text-center bold h6 width50 blog-show-btn"
       id="nav-home-tab"
       data-toggle="tab"
       href="#nav-home"
@@ -11,7 +11,7 @@
       >بلاگ</a
     >
     <a
-      class="nav-item nav-link text-center bold h6 width50"
+      class="nav-item nav-link active text-center bold h6 width50"
       id="nav-profile-tab"
       data-toggle="tab"
       href="#nav-profile"
@@ -24,15 +24,13 @@
 </nav>
 <div class="tab-content" id="nav-tabContent">
   <div
-    class="tab-pane fade show active"
+    class="tab-pane fade blog-loading"
     id="nav-home"
     role="tabpanel"
     aria-labelledby="nav-home-tab"
-  >
-    ...
-  </div>
+  ></div>
   <div
-    class="tab-pane fade"
+    class="tab-pane fade show active"
     id="nav-profile"
     role="tabpanel"
     aria-labelledby="nav-profile-tab"
@@ -107,6 +105,10 @@
   $("#servicesMobileBtn").click(function() {
     $("#homepage-main").load("../../pages/layout/honarema/servicesMobile.html");
   });
+  $(".blog-show-btn").click(function() {
+    $(".blog-loading").load("../../pages/layout/blog.html");
+  });
+
   $("#companyMobileBtn").click(function() {
     $("#homepage-main").load("../../pages/layout/honarema/companyMobile.html");
   });
