@@ -814,3 +814,11 @@ body nav.tab .bar .middle .side {
 .pb-8 {
   padding-bottom: 8rem !important;
 }
+
+.width100 {
+  width: 100%;
+}
+
+.width50 {
+  width: 50%;
+}
